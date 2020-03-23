@@ -1,0 +1,29 @@
+depends = {
+[[lua~=5.2]],
+[[luasocket~=3.0]],
+[[luafilesystem~=1.6]],
+[[zlib~=1.2]],
+}
+
+maintainer = "Michal Kottman"
+url = "https://github.com/mkottman/lua-git"
+license = "MIT/X11"
+type = "x86_64"
+version = "0.5"
+author = "Michal Kottman"
+arch = "Ubuntu"
+name = "lua-git"
+desc = "A library to access Git repositories and its objects (files, commits) in Lua"
+files = {
+Runtime = {
+[[lib/lua/git/core.so]],
+[[lib/lua/git.lua]],
+[[lib/lua/git/objects.lua]],
+[[lib/lua/git/pack.lua]],
+[[lib/lua/git/protocol.lua]],
+[[lib/lua/git/repo.lua]],
+[[lib/lua/git/util.lua]],
+}
+,
+}
+
