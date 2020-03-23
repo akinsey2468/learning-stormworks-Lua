@@ -1,0 +1,36 @@
+depends = {
+[[lua~=5.2]],
+}
+
+maintainer = "Peter Drahoš"
+url = "http://www.keplerproject.org/luafilesystem/"
+license = "Kepler"
+type = "x86_64"
+version = "1.6.2"
+author = "Roberto Ierusalimschy, André Carregal, Tomás Guisasola"
+arch = "Ubuntu"
+name = "luafilesystem"
+desc = "File System Library for the Lua Programming Language"
+files = {
+Data = {
+[[share/luafilesystem/README]],
+}
+,
+Runtime = {
+[[lib/lua/lfs.so]],
+}
+,
+Test = {
+[[share/luafilesystem/test//test.lua]],
+}
+,
+Documentation = {
+[[share/luafilesystem/doc//us/manual.html]],
+[[share/luafilesystem/doc//us/index.html]],
+[[share/luafilesystem/doc//us/luafilesystem.png]],
+[[share/luafilesystem/doc//us/license.html]],
+[[share/luafilesystem/doc//us/examples.html]],
+}
+,
+}
+

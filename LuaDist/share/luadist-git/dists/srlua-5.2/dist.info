@@ -1,0 +1,29 @@
+depends = {
+[[lua~=5.2]],
+}
+
+maintainer = "Peter Drahoš"
+url = "http://www.tecgraf.puc-rio.br/~lhf/ftp/lua/"
+license = "MIT/X11"
+type = "x86_64"
+version = "5.2"
+author = "Luiz Henrique de Figueiredo"
+arch = "Ubuntu"
+name = "srlua"
+desc = "A tool for building self-running Lua programs."
+files = {
+Data = {
+[[share/srlua/README.md]],
+}
+,
+Runtime = {
+[[bin/glue]],
+[[bin/srlua]],
+}
+,
+Test = {
+[[share/srlua/test/test.lua]],
+}
+,
+}
+

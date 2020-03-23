@@ -1,0 +1,50 @@
+depends = {
+[[lua~=5.2]],
+[[luafilesystem~=1.6]],
+[[srlua~=5.2]],
+[[lua-git~=0.5]],
+}
+
+maintainer = "Marek Srank"
+type = "x86_64"
+url = "http://www.luadist.org"
+license = "MIT/X11"
+author = "Marek Srank, Peter Drahoš"
+version = "0.2.7"
+conflicts = {
+[[luadist]],
+}
+
+arch = "Ubuntu"
+name = "luadist-git"
+desc = "Git based deployment of LuaDist modules."
+files = {
+Data = {
+[[share/luadist-git/COPYRIGHT.TXT]],
+[[share/luadist-git/README.md]],
+}
+,
+Runtime = {
+[[bin/luadist]],
+[[lib/lua/dist/config.lua]],
+[[lib/lua/dist/constraints.lua]],
+[[lib/lua/dist/depends.lua]],
+[[lib/lua/dist/git.lua]],
+[[lib/lua/dist/init.lua]],
+[[lib/lua/dist/manifest.lua]],
+[[lib/lua/dist/package.lua]],
+[[lib/lua/dist/sys.lua]],
+[[lib/lua/dist/utils.lua]],
+}
+,
+Other = {
+[[share/luadist-git/etc/luadist.lua]],
+}
+,
+Test = {
+[[share/luadist-git/test//test_depends.lua]],
+[[share/luadist-git/test//test_sys.lua]],
+}
+,
+}
+
